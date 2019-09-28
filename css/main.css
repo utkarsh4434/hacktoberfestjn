@@ -10,7 +10,10 @@
 }
 
 .fuschia-color{
-    color: var(--fuschia-color);
+    color: var(--fuschia-color) !important;
+}
+.pink-color{
+    color: var(--pink-color) !important;
 }
 
 /* MENU */
@@ -31,6 +34,7 @@
     color: #efefef;
     text-transform: uppercase;
     letter-spacing: 2px;
+    user-select: none;
 }
 
 #nav-links{
@@ -43,7 +47,6 @@
 #nav-links a{
     color: #dedede;
     text-decoration: none;
-    text-transform: capitalize;
     transition: font-size .2s ease-in;   
 }
 

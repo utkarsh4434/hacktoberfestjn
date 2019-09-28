@@ -109,15 +109,34 @@ html{
         justify-content: space-evenly;
         flex-direction: column;
         padding: 10px;
+        animation: fadeIn .4s ease forwards;
     }
     #nav-links li{
         width: 100%;
-        /* text-align: center; */
+    }
+
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
     }
 }
 
 .menu-fuschia{
     background: var(--fuschia-color);
+}
+
+#nav-menu.menu-active div:nth-child(1) {
+    transform: translateY(8px)  rotate(45deg);
+}
+#nav-menu.menu-active div:nth-child(2) {
+    transform: rotate(-45deg);
+}
+#nav-menu.menu-active div:nth-child(3) {
+    display: none;
 }
 
 /* MENU END */

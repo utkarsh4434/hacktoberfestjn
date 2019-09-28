@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    --dark-color: rgb(10, 3, 31);
+    --fuschia-color: #FF00AA;
+    --pink-color: rgb(225, 0, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+.fuschia-color{
+    color: var(--fuschia-color);
+}
+
+/* MENU */
+
+#nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--dark-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+#nav-brand{
+    color: #efefef;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+}
+
+#nav-links a{
+    color: #dedede;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: font-size .2s ease-in;   
+}
+
+#nav-links a:hover{
+    color: var(--fuschia-color);
+    font-size: 1.1em;
+}
+#nav-links a:active{
+    color: var(--pink-color);
+}
+
+#nav-menu{
+    margin-right: 40px;
+    padding: 5px;
+    display: none;
+}
+
+#nav-menu:hover{
+    cursor: pointer;
+}
+#nav-menu:hover .burger-line{
+    background: var(--fuschia-color);
+}
+#nav-menu:active .burger-line{
+    background: var(--pink-color);
+}
+
+.burger-line{
+    background: #dedede;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+}
+
+@media only screen and (max-width: 600px){
+    #nav-menu{
+        display: block;
+    }
+
+    #nav-links{
+        display: none;
+    }
+    
+    #nav-links.menu-active{
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: var(--dark-color);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+}
+
+.menu-fuschia{
+    background: var(--fuschia-color);
+}
+
+/* MENU END */

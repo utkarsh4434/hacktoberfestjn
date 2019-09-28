@@ -196,3 +196,28 @@ section a:active{
         background: var(--dark-color);
     }
 }
+
+#agenda table{
+    margin: auto;
+}
+
+#agenda table th{
+    /* border-right: var(--dark-color) solid 1px; */
+    padding: 5px;
+    color: var(--pink-color);
+}
+#agenda table td{
+    font-weight: 900;
+}
+#agenda .th-head{
+    background: var(--dark-blue-color);
+    color: #ddd;
+}
+
+.white-color{
+    color: white;
+}
+
+.green-color{
+    color: #437d43;
+}

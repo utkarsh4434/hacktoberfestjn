@@ -7,6 +7,7 @@
     --fuschia-color: #FF00AA;
     --pink-color: rgb(225, 0, 255);
     --dark-blue-color: #152246;
+    --dark-color: #03032d;
     --dark-gray-color: #2f3138;
     font-family: 'Roboto', sans-serif;
 }
@@ -102,7 +103,7 @@ html{
         top: 60px;
         right: 0;
         background: var(--dark-color);
-        height: 100vh;
+        height: 92vh;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -184,4 +185,14 @@ section a:active{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+@media only screen and (min-width:678px){
+    .section-group{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-group #about{
+        background: var(--dark-color);
+    }
 }

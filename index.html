@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +9,96 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
+
 <body>
-    
-<nav id="nav">
-    <div id="nav-brand">
-        <h2>Hacktoberfest<span class="fuschia-color">JN</span> </h2>
-    </div>
-    <ul id="nav-links">
-        <li><a href="#signin" class="pink-color">Inscreva-se</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#location">Local</a></li>
-        <li><a href="#conduct">Conduta</a></li>
-    </ul>
-    <div id="nav-menu">
-        <div class="burger-line"></div>
-        <div class="burger-line"></div>
-        <div class="burger-line"></div>
-    </div>
-</nav>
 
+    <nav id="nav">
+        <div id="nav-brand">
+            <h2>Hacktoberfest<span class="fuschia-color">JN</span> </h2>
+        </div>
+        <ul id="nav-links">
+            <li><a href="#signin" class="pink-color">Inscreva-se</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#agenda">Programação</a></li>
+            <li><a href="#location">Local</a></li>
+            <li><a href="https://docs.google.com/document/d/1GZHGjYP20B0tPU4ZujL79OrUbow_0JQ6FWE2H0Tqju8/preview"
+                    target="_blank">Conduta</a></li>
+        </ul>
+        <div id="nav-menu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+    </nav>
 
-<script src="./js/main.js"></script>
+    <header id="main-header">
+        <div id="main-bg"></div>
+        <img id="main-logo" src="./img/logo.png" />
+        <div id="main-text">
+            <h2>03 de Outubro, no IFNMG - Campus Avançado Janaúba</h2>
+        </div>
+    </header>
+
+    <section id="about" class="dark-section">
+        <h2>Sobre o Hacktoberfest</h2>
+        <div class="content">
+            <p>
+                Hacktoberfest® é um evento que promove a participação na comunidade open source.
+                Comunidade esta, que cresce fortemente ano após ano. Junte se a nós, realize 4 pull requests e ganhe
+                uma edição limitada da camiseta oficial.
+            </p>
+            <p>Mais informações em <a href="https://hacktoberfest.digitalocean.com">hacktoberfest.digitalocean.com</a></p>
+        </div>
+    </section>
+
+    <section id="agenda">
+        <h2>Programação</h2>
+        <div class="content">
+            <p>
+                <strong>14:00 | 16:00</strong> -- Introdução ao Open-Source, Git e Github
+            </p>
+            <p>
+                <strong>16:00 | 18:00</strong> -- HackTime: Mão na Massa!
+            </p>
+        </div>
+    </section>
+
+    <section id="location" class="dark-section">
+        <h2>Localização</h2>
+        <div class="content">
+            <p>
+                IFNMG - Campus Avançado Janaúba
+            </p>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=IFNMG%20Campus%20Avan%C3%A7ado%20Jana%C3%BAba&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        /* height: 500px; */
+                        width: 95%;
+                    }
+
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        /* height: 500px; */
+                        width: 100%;
+                    }
+
+                    #gmap_canvas {
+                        width: 100%;
+                        height: 50vh;
+                    }
+                </style>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>

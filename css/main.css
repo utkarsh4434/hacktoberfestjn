@@ -106,7 +106,7 @@ html{
         top: 60px;
         right: 0;
         background: var(--dark-color);
-        height: 92vh;
+        height: 95vh;
         display: flex;
         align-items: center;
         justify-content: space-evenly;

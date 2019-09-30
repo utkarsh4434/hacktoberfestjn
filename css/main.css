@@ -229,12 +229,12 @@ section a:active{
 }
 
 #agenda table th{
-    /* border-right: var(--dark-color) solid 1px; */
-    padding: 5px;
     color: var(--pink-color);
 }
-#agenda table td{
+#agenda table td, #agenda table th{
     font-weight: 900;
+    padding: 5px;
+    background: rgba(221, 221, 221, 0.685);
 }
 #agenda .th-head{
     background: var(--dark-blue-color);
@@ -283,3 +283,9 @@ section a:active{
     height: 50vh;
 }
 /* google maps end */
+
+.quote{
+    margin-left: 40px;
+    padding-left: 10px;
+    border-left: rgba(221, 221, 221, 0.685) 2px solid;
+}

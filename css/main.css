@@ -289,3 +289,17 @@ section a:active{
     padding-left: 10px;
     border-left: rgba(221, 221, 221, 0.685) 2px solid;
 }
+
+.button{
+    color: white;
+    background: #FF00AA;
+    padding: 10px 20px;
+    margin: 15px auto;
+}
+
+.button:hover{
+    background: var(--pink-color);
+    background: -webkit-linear-gradient(45deg, #FF00AA,
+     rgb(0, 68, 255));
+    color: white;
+}

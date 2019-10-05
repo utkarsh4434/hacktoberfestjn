@@ -207,7 +207,7 @@ section a:active{
     color: #ddd;
 }
 
-#location .content{
+.content{
     display: flex;
     justify-content: center;
     align-items: center;

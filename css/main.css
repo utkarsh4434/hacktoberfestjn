@@ -303,3 +303,9 @@ section a:active{
      rgb(0, 68, 255));
     color: white;
 }
+
+#galeria .content img{
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px 3px rgba(15, 25, 53, 0.5);
+}
